@@ -1,13 +1,78 @@
 .App {
   text-align: center;
 
-  .mainWrap {
-    padding-top: 50px;
+  .navbar {
+    height: 70px;
+    .container {
+      > .navbar-nav {
+        float: right;
+      }
+    }
   }
 
-  .container {
-    > .navbar-nav {
-      float: right;
+  .bannerWrap {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../public/main_banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    > .bannerBg {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0.3;
+      position: absolute;
+    }
+
+    > h1 {
+      color: #fff;
+      position: relative;
+      z-index: 3;
+      font-size: 4rem;
+    }
+  }
+
+  .aboutWrap {
+    width: 100%;
+    background-color: aliceblue;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    > .container {
+      > .row {
+        > .title {
+          font-size: 2.7rem;
+          font-weight: bolder;
+          color: #1b125f;
+          text-align: left;
+          margin-top: 3.5rem;
+
+          > span {
+            border-bottom: 5px solid #1b125f;
+          }
+        }
+        > .infoBox {
+          > .row {
+            > div {
+              margin-bottom: 20px;
+              .subTitle {
+                font-size: 2rem;
+                font-weight: bold;
+                color: #1b125f;
+              }
+              > span {
+                display: block;
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
