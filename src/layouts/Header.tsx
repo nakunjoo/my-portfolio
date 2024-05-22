@@ -11,6 +11,7 @@ export default function Header() {
         <Nav onSelect={handleSelect}>
           <Nav.Link eventKey={1}>{'AboutMe'}</Nav.Link>
           <Nav.Link eventKey={2}>{'Skills'}</Nav.Link>
+          <Nav.Link eventKey={2}>{'Project'}</Nav.Link>
         </Nav>
       </Container>
     </Navbar>

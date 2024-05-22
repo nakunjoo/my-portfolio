@@ -40,6 +40,10 @@ export default function MainPage() {
           </Row>
         </Container>
       </div>
+      <div className={'skillWrap'}>
+        <h2>{'Skill'}</h2>
+        <Container />
+      </div>
     </div>
   );
 }
