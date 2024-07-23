@@ -1,78 +1,89 @@
 .App {
   text-align: center;
 
-  .navbar {
-    height: 70px;
-    .container {
-      > .navbar-nav {
-        float: right;
-      }
-    }
-  }
-
-  .bannerWrap {
-    width: 100%;
+  .mainWrap {
     height: 100vh;
-    background-image: url('../public/main_banner.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    background-color: #7e7e7e;
 
-    > .bannerBg {
+    .main-container {
       width: 100%;
-      height: 100%;
-      background-color: black;
-      opacity: 0.3;
-      position: absolute;
-    }
-
-    > h1 {
-      color: #fff;
+      height: 90%;
+      background-color: #f0eee9;
       position: relative;
-      z-index: 3;
-      font-size: 4rem;
-    }
-  }
+      z-index: 1;
+      overflow: hidden;
 
-  .aboutWrap {
-    width: 100%;
-    background-color: aliceblue;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    > .container {
-      > .row {
-        > .title {
-          font-size: 2.7rem;
-          font-weight: bolder;
-          color: #1b125f;
-          text-align: left;
-          margin-top: 3.5rem;
+      .banner-arrow {
+        width: 100%;
+
+        > .arrow {
+          position: absolute;
+          top: 0px;
+          width: 50px;
+          height: 100%;
+          cursor: pointer;
 
           > span {
-            border-bottom: 5px solid #1b125f;
+            position: relative;
+            top: 45%;
+            color: #fff;
+            font-size: 24px;
+            display: none;
           }
-        }
-        > .infoBox {
-          > .row {
-            > div {
-              margin-bottom: 20px;
-              .subTitle {
-                font-size: 2rem;
-                font-weight: bold;
-                color: #1b125f;
-              }
-              > span {
-                display: block;
-                font-size: 1.5rem;
-              }
+
+          &.disabled {
+            display: none;
+          }
+          &:hover {
+            background-color: rgba($color: #000000, $alpha: 0.5);
+
+            > span {
+              display: block;
             }
+          }
+
+          &.arrow-left {
+            left: 0px;
+          }
+
+          &.arrow-right {
+            right: 0px;
           }
         }
       }
     }
+
+    .banner-move {
+      width: 1000%;
+      height: 100%;
+      transition: 0.5s;
+
+      > div {
+        float: left;
+        overflow: hidden;
+        width: 10%;
+        height: 100%;
+      }
+    }
   }
+}
+
+.boundary-bg {
+  width: 1000%;
+  height: 30px;
+  background-color: #894c1f;
+  border-top: 3px solid #000;
+  border-bottom: 1px solid #d7d7d7;
+  position: absolute;
+  bottom: 0;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
 }

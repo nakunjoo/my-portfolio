@@ -1,8 +1,12 @@
 import BannerMove from '../components/BannerMove';
-import { myPortfolio, aboutMy, ElevatorFloor1 } from '../utils/MainPage';
+import { myPortfolio, aboutMy, ElevatorFloor2 } from '../utils/SkillPage';
 
-export default function MainPage() {
+export default function SkillPage() {
   const bannerData = [
+    {
+      class: 'banner3',
+      content: ElevatorFloor2,
+    },
     {
       class: 'banner1',
       content: myPortfolio,
@@ -10,10 +14,6 @@ export default function MainPage() {
     {
       class: 'banner2',
       content: aboutMy,
-    },
-    {
-      class: 'banner3',
-      content: ElevatorFloor1,
     },
   ];
 
