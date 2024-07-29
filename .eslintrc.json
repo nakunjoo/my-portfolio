@@ -5,7 +5,7 @@
     "es2021": true
   },
   // [parser] typescript를 parser로 사용하도록 함
-  "parser": "@typescript-eslint/parser ",
+  "parser": "@typescript-eslint/parser",
   // [plugins] 사용할 eslint 플러그인 설정
   "plugins": ["@typescript-eslint", "prettier"],
   // [extends] 프로젝트에 적용할 eslit 규칙셋
@@ -31,8 +31,8 @@
         "trailingComma": "all",
         "printWidth": 80,
         "bracketSpacing": true,
-        "arrowParens": "aviod",
-        "endOfLine": "auto"
+        "endOfLine": "auto",
+        "arrowParens": "always"
       }
     ],
     // var 금지

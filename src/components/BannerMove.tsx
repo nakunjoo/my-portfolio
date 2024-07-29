@@ -1,25 +1,26 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-export default function BannerMove({ dataValue }: { dataValue: Array<any> }) {
+export default function BannerMove({
+  dataValue,
+  floor,
+}: {
+  dataValue: Array<any>;
+  floor: string;
+}) {
   const [bannerNum, setBannerNum] = useState(0);
   const banner = useRef<HTMLDivElement>(null);
 
   function bannerMove(type: string) {
-    console.log('bannerNum:', bannerNum);
     const moveNum = type === 'left' ? bannerNum - 1 : bannerNum + 1;
     const marginValue = `${-moveNum * 100}%`;
-    if (type === 'left') {
-      if (moveNum >= 0) {
-        if (banner.current) {
+    if (banner.current) {
+      if (type === 'left') {
+        if (moveNum >= 0) {
           banner.current.style.setProperty('margin-left', marginValue);
           setBannerNum(moveNum);
         }
-      }
-    } else if (type === 'right') {
-      console.log('dataValue.length:', dataValue.length);
-      console.log(moveNum);
-      if (moveNum < dataValue.length) {
-        if (banner.current) {
+      } else if (type === 'right') {
+        if (moveNum < dataValue.length) {
           banner.current.style.setProperty('margin-left', marginValue);
           setBannerNum(moveNum);
         }
@@ -28,7 +29,7 @@ export default function BannerMove({ dataValue }: { dataValue: Array<any> }) {
   }
 
   return (
-    <div className={'main-container clearfix'}>
+    <div className={`main-container clearfix ${floor}`}>
       <div className={'banner-move'} ref={banner}>
         {dataValue.map((value: any) => (
           <div className={(value.class, 'banner')} key={value.class}>
@@ -37,6 +38,7 @@ export default function BannerMove({ dataValue }: { dataValue: Array<any> }) {
         ))}
       </div>
       <div className={'boundary-bg'} />
+      <div className={'footer-bg'} />
       <div className={'banner-arrow'}>
         <div
           className={`arrow arrow-left ${bannerNum === 0 ? 'disabled' : ''}`}

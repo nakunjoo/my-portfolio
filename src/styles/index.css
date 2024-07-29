@@ -1,6 +1,11 @@
 * {
   margin: 0px;
   padding: 0px;
+  background-color: #f0eee9;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 body {
   margin: 0;

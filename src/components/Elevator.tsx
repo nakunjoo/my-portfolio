@@ -1,33 +1,45 @@
+import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import '../styles/Elevator.scss';
 import { useNavigate } from 'react-router-dom';
-import FloorSelect from './FloorSelect';
+import { allowScroll, preventScroll } from '../utils/ScrollEvent';
 
 export default function Elevator({ floor }: { floor: string }) {
   const navigate = useNavigate()
-  let doorOpen = false;
 
   function toggleDoor(type: string) {
-    console.log('type:', type)
-    const doorContainer = document.querySelector('.door-container');
+    let scrollY = 0;
+    console.log('floor:', floor);
     if (floor === '1') {
-      if (type === 'up') {
-        navigate('/skills')
-      } else {
-        navigate('/projects')
-      }
-    } else {
-      doorOpen = !doorOpen;
-      if (doorOpen) {
+      const doorContainer = document.querySelector('.door-container');
+      
         // eslint-disable-next-line
         doorContainer?.classList.add('open');
-      } else {
-        doorContainer?.classList.remove('open');
+        setTimeout(()=>{
+          doorContainer?.classList.remove('open');
+        },2000)
+        setTimeout(()=>{
+          navigate('/contents')
+        }, 4000)
+      scrollY = 1838;
+    } else {
+      if (floor === 'B1') {
+        scrollY = 1838;
+      } else if (floor === 'B2') {
+        if (type === 'up') {
+          scrollY = 0;
+        } else {
+          scrollY = document.body.scrollHeight;
+        }
+      } else if (floor === 'B3') {
+        scrollY = 1838;
       }
+      allowScroll(scrollY);
+      setTimeout(() => {
+        preventScroll();
+      }, 500);
     }
   }
-
-
 
   return (
     <div className={'elevator-bg clearfix'}>
@@ -40,14 +52,30 @@ export default function Elevator({ floor }: { floor: string }) {
           <div className={'line line-right'} />
         </div>
         <div className={'door-container clearfix'}>
-          <FloorSelect floor={floor}/>
+          <div className={"inside-container"}>
+            <div className={"inside-top"}>
+              <div className={"left"} />
+              <div className={"right"} />
+            </div>
+            <div className={"inside-wall"}>
+              <div className={"line line-left"} />
+              <div className={"line line-right"} />
+            </div>
+            <div className={"inside-footer"}>
+              <div className={"left"} />
+              <div className={"right"} />
+            </div>
+          </div>
           <div className={'door door-left'} />
           <div className={'door door-right'} />
         </div>
-        <div className={'buttonBox'}>
+        <div
+          className={`buttonBox ${floor === '1' || floor === 'B1' ? 'up-disabled' : ''} ${
+            floor === 'B3' ? 'down-disabled' : ''
+          }`}>
           <button
             type={'button'}
-            className={'button button-up'}
+            className={`button button-up`}
             onClick={() => {
               toggleDoor('up');
             }}>

@@ -1,8 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import DefaultLayout from '../layouts';
 import MainPage from '../pages';
-import SkillPage from '../pages/Skills';
-import ProjectPage from '../pages/Project';
+import ContentsPage from '../pages/Contents';
 
 export default function Router() {
   return (
@@ -15,20 +14,10 @@ export default function Router() {
 
         {/* case2. MainPage Component가 MainLayout Componet의 children으로 삽입된다. */}
         <Route
-          path={'/skills'}
+          path={'/contents'}
           element={
             <DefaultLayout>
-              <SkillPage />
-            </DefaultLayout>
-          }
-        />
-
-        {/* case2. MainPage Component가 MainLayout Componet의 children으로 삽입된다. */}
-        <Route
-          path={'/projects'}
-          element={
-            <DefaultLayout>
-              <ProjectPage />
+              <ContentsPage />
             </DefaultLayout>
           }
         />
