@@ -32,7 +32,7 @@ export default function BannerMove({
     <div className={`main-container clearfix ${floor}`}>
       <div className={'banner-move'} ref={banner}>
         {dataValue.map((value: any) => (
-          <div className={(value.class, 'banner')} key={value.class}>
+          <div className={'banner'} key={value.class}>
             {value.content()}
           </div>
         ))}

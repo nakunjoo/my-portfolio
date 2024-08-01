@@ -18,43 +18,43 @@ export default function ContentsPage() {
   }, []);
   const bannerData = [
     {
-      class: 'banner3',
+      class: 'ElevatorFloorB1_1',
       content: ElevatorFloorB1,
     },
     {
-      class: 'banner1',
+      class: 'aboutMy',
       content: aboutMy,
     },
     {
-      class: 'banner3',
+      class: 'ElevatorFloorB1_2',
       content: ElevatorFloorB1,
     },
   ];
   const bannerDataB1 = [
     {
-      class: 'banner3',
+      class: 'ElevatorFloorB2_1',
       content: ElevatorFloorB2,
     },
     {
-      class: 'banner1',
+      class: 'mySkills',
       content: mySkills,
     },
     {
-      class: 'banner3',
+      class: 'ElevatorFloorB2_2',
       content: ElevatorFloorB2,
     },
   ];
   const bannerDataB2 = [
     {
-      class: 'banner3',
+      class: 'ElevatorFloorB3_1',
       content: ElevatorFloorB3,
     },
     {
-      class: 'banner1',
+      class: 'myProjects',
       content: myProjects,
     },
     {
-      class: 'banner3',
+      class: 'ElevatorFloorB3_2',
       content: ElevatorFloorB3,
     },
   ];

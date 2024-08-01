@@ -9,7 +9,7 @@ export default function Elevator({ floor }: { floor: string }) {
 
   function toggleDoor(type: string) {
     let scrollY = 0;
-    console.log('floor:', floor);
+    
     if (floor === '1') {
       const doorContainer = document.querySelector('.door-container');
       
@@ -21,10 +21,10 @@ export default function Elevator({ floor }: { floor: string }) {
         setTimeout(()=>{
           navigate('/contents')
         }, 4000)
-      scrollY = 1838;
+      scrollY = document.body.offsetHeight * 2;
     } else {
       if (floor === 'B1') {
-        scrollY = 1838;
+        scrollY = document.body.offsetHeight * 2;
       } else if (floor === 'B2') {
         if (type === 'up') {
           scrollY = 0;
@@ -32,7 +32,7 @@ export default function Elevator({ floor }: { floor: string }) {
           scrollY = document.body.scrollHeight;
         }
       } else if (floor === 'B3') {
-        scrollY = 1838;
+        scrollY = document.body.offsetHeight * 2;
       }
       allowScroll(scrollY);
       setTimeout(() => {

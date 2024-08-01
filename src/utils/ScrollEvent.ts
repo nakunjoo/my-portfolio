@@ -11,7 +11,6 @@ export const preventScroll = () => {
  * @param prevScrollY 스크롤 방지 함수에서 반환된 스크롤 위치
  */
 export const allowScroll = (prevScrollY: number) => {
-  console.log('prevScrollY:', prevScrollY);
   window.scroll({
     behavior: 'smooth',
     top: prevScrollY,
