@@ -33,7 +33,7 @@ export default function BannerMove({
       <div className={'banner-move'} ref={banner}>
         {dataValue.map((value: any) => (
           <div className={'banner'} key={value.class}>
-            {value.content()}
+            {value.content}
           </div>
         ))}
       </div>

@@ -1,13 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import BannerMove from '../components/BannerMove';
-import {
-  aboutMy,
-  mySkills,
-  myProjects,
-  ElevatorFloorB1,
-  ElevatorFloorB2,
-  ElevatorFloorB3,
-} from '../utils/ContentsPage';
+import { myProjects, ElevatorFloorB3 } from '../utils/ContentsPage';
+import { AboutMe, ElevatorFloorB1 } from '../utils/Aboutme';
+import { mySkills1, mySkills2, ElevatorFloorB2 } from '../utils/Skills';
+
 import { preventScroll } from '../utils/ScrollEvent';
 
 export default function ContentsPage() {
@@ -19,43 +15,47 @@ export default function ContentsPage() {
   const bannerData = [
     {
       class: 'ElevatorFloorB1_1',
-      content: ElevatorFloorB1,
+      content: ElevatorFloorB1('left'),
     },
     {
       class: 'aboutMy',
-      content: aboutMy,
+      content: AboutMe(),
     },
     {
       class: 'ElevatorFloorB1_2',
-      content: ElevatorFloorB1,
+      content: ElevatorFloorB1('right'),
     },
   ];
   const bannerDataB1 = [
     {
       class: 'ElevatorFloorB2_1',
-      content: ElevatorFloorB2,
+      content: ElevatorFloorB2('left'),
     },
     {
-      class: 'mySkills',
-      content: mySkills,
+      class: 'mySkills_1',
+      content: mySkills1(),
+    },
+    {
+      class: 'mySkills_2',
+      content: mySkills2(),
     },
     {
       class: 'ElevatorFloorB2_2',
-      content: ElevatorFloorB2,
+      content: ElevatorFloorB2('right'),
     },
   ];
   const bannerDataB2 = [
     {
       class: 'ElevatorFloorB3_1',
-      content: ElevatorFloorB3,
+      content: ElevatorFloorB3('left'),
     },
     {
       class: 'myProjects',
-      content: myProjects,
+      content: myProjects(),
     },
     {
       class: 'ElevatorFloorB3_2',
-      content: ElevatorFloorB3,
+      content: ElevatorFloorB3('right'),
     },
   ];
 

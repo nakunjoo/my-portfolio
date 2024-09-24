@@ -9,6 +9,29 @@
   height: 100%;
   position: relative;
 
+  .titleWrap {
+    font-family: fantasy;
+    position: absolute;
+    font-size: 50px;
+    top: 5%;
+    white-space: pre;
+
+    &.left {
+      right: 5%;
+
+      ::after {
+        content: '\00000a ☞';
+      }
+    }
+    &.right {
+      left: 5%;
+
+      ::after {
+        content: '\00000a ☜';
+      }
+    }
+  }
+
   .container {
     width: 600px;
     margin: 0 auto;

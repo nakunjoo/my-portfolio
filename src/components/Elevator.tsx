@@ -4,7 +4,7 @@ import '../styles/Elevator.scss';
 import { useNavigate } from 'react-router-dom';
 import { allowScroll, preventScroll } from '../utils/ScrollEvent';
 
-export default function Elevator({ floor }: { floor: string }) {
+export default function Elevator({ floor, title, array }: { floor: string, title: string, array: string }) {
   const navigate = useNavigate()
 
   function toggleDoor(type: string) {
@@ -12,7 +12,6 @@ export default function Elevator({ floor }: { floor: string }) {
     
     if (floor === '1') {
       const doorContainer = document.querySelector('.door-container');
-      
         // eslint-disable-next-line
         doorContainer?.classList.add('open');
         setTimeout(()=>{
@@ -43,6 +42,11 @@ export default function Elevator({ floor }: { floor: string }) {
 
   return (
     <div className={'elevator-bg clearfix'}>
+      <div className={`titleWrap ${array}`}>
+        <div className={`${array}`}>
+          {title}
+        </div>
+      </div>
       <Container>
         <div className={'door-bg clearfix'}>
           <div className={'floor'}>{floor}</div>

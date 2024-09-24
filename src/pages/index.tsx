@@ -13,11 +13,11 @@ export default function MainPage() {
   const bannerData = [
     {
       class: 'myPortfolio',
-      content: myPortfolio,
+      content: myPortfolio(),
     },
     {
       class: 'ElevatorFloor1',
-      content: ElevatorFloor1,
+      content: ElevatorFloor1(),
     },
   ];
 
