@@ -64,6 +64,90 @@
             margin-bottom: 100px;
           }
 
+          > .back {
+            > h2 {
+              font-size: 50px;
+              margin-bottom: 50px;
+            }
+            > .imgBox {
+              width: 90%;
+              margin: 0 auto;
+              display: flex;
+              justify-content: start;
+              > div {
+                width: 150px;
+                height: 150px;
+                margin-bottom: 80px;
+                margin-right: 40px;
+
+                > p {
+                  font-size: 24px;
+                  margin-bottom: 2px;
+                }
+
+                > img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+          }
+
+          > .etc {
+            > h2 {
+              font-size: 50px;
+              margin-bottom: 50px;
+            }
+            > .imgBox {
+              width: 90%;
+              margin: 0 auto;
+              display: flex;
+              justify-content: start;
+              flex-wrap: wrap;
+              > div {
+                width: 150px;
+                height: 150px;
+                margin-bottom: 50px;
+                margin-right: 40px;
+
+                > p {
+                  font-size: 24px;
+                  margin-bottom: 2px;
+                }
+
+                > img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+          }
+
+          > .imgBox {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            > div {
+              width: 150px;
+              height: 150px;
+              margin-bottom: 80px;
+              margin-left: 20px;
+              margin-right: 20px;
+
+              > p {
+                font-size: 24px;
+                margin-bottom: 2px;
+              }
+
+              > img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+
           > ul {
             display: flex;
             justify-content: space-between;
@@ -89,6 +173,7 @@
                 font-family: auto;
                 font-size: 22px;
                 font-weight: 700;
+                text-align: center;
               }
             }
           }

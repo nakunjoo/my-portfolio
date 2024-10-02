@@ -1,6 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
 import BannerMove from '../components/BannerMove';
-import { myProjects, ElevatorFloorB3 } from '../utils/ContentsPage';
+import {
+  myProject1,
+  myProject2,
+  myProject3,
+  myProject4,
+  ElevatorFloorB3,
+} from '../utils/Projects';
 import { AboutMe, ElevatorFloorB1 } from '../utils/Aboutme';
 import { mySkills1, mySkills2, ElevatorFloorB2 } from '../utils/Skills';
 
@@ -50,8 +56,20 @@ export default function ContentsPage() {
       content: ElevatorFloorB3('left'),
     },
     {
-      class: 'myProjects',
-      content: myProjects(),
+      class: 'myProject_1',
+      content: myProject1(),
+    },
+    {
+      class: 'myProject_2',
+      content: myProject2(),
+    },
+    {
+      class: 'myProject_3',
+      content: myProject3(),
+    },
+    {
+      class: 'myProject_4',
+      content: myProject4(),
     },
     {
       class: 'ElevatorFloorB3_2',

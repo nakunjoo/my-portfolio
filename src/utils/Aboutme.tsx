@@ -54,7 +54,17 @@ export const AboutMe = () => (
               <Icon icon={'bi:github'} style={{ color: '#636363' }} />
               {'github'}
             </h3>
-            <p>{'https://github.com/nakunjoo'}</p>
+            <p>
+              <a
+                href={'https://github.com/nakunjoo'}
+                target={'_blank'}
+                rel={'noreferrer'}>
+                <Icon
+                  icon={'bi:github'}
+                  style={{ width: '40px', height: '40px', color: '#000' }}
+                />
+              </a>
+            </p>
           </li>
         </ul>
       </div>
