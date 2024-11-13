@@ -5,6 +5,7 @@ import {
   myProject2,
   myProject3,
   myProject4,
+  myProjectPortfolio,
   ElevatorFloorB3,
 } from '../utils/Projects';
 import { AboutMe, ElevatorFloorB1 } from '../utils/Aboutme';
@@ -70,6 +71,10 @@ export default function ContentsPage() {
     {
       class: 'myProject_4',
       content: myProject4(),
+    },
+    {
+      class: 'myProject_portfolio',
+      content: myProjectPortfolio(),
     },
     {
       class: 'ElevatorFloorB3_2',

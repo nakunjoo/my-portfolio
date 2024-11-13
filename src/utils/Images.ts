@@ -51,6 +51,17 @@ import portfolio3 from '../assets/portfolio/portfolio_3.png';
 import portfolio4 from '../assets/portfolio/portfolio_4.png';
 import portfolio5 from '../assets/portfolio/portfolio_5.png';
 
+// movieTheater
+import movieTheater1 from '../assets/movieTheater/movie_theater_1.png';
+import movieTheater2 from '../assets/movieTheater/movie_theater_2.png';
+import movieTheater3 from '../assets/movieTheater/movie_theater_3.png';
+import movieTheater4 from '../assets/movieTheater/movie_theater_4.png';
+import movieTheater5 from '../assets/movieTheater/movie_theater_5.png';
+import movieTheater6 from '../assets/movieTheater/movie_theater_6.png';
+import movieTheater7 from '../assets/movieTheater/movie_theater_7.png';
+import movieTheater8 from '../assets/movieTheater/movie_theater_8.png';
+import movieTheater9 from '../assets/movieTheater/movie_theater_9.png';
+
 const Images = {
   HtmlImg,
   CssImg,
@@ -91,6 +102,15 @@ const Images = {
   portfolio3,
   portfolio4,
   portfolio5,
+  movieTheater1,
+  movieTheater2,
+  movieTheater3,
+  movieTheater4,
+  movieTheater5,
+  movieTheater6,
+  movieTheater7,
+  movieTheater8,
+  movieTheater9,
 };
 
 export default Images;

@@ -79,7 +79,8 @@ const projectData = [
       },
     ],
     site: 'https://dongne.cc',
-    git: null,
+    configure: null,
+    git: [],
   },
   {
     name: '장비대여 관리',
@@ -177,7 +178,8 @@ const projectData = [
       },
     ],
     site: null,
-    git: null,
+    configure: null,
+    git: [],
   },
   {
     name: 'Schedule Calendar',
@@ -246,7 +248,122 @@ const projectData = [
       },
     ],
     site: 'https://calendars-dot-teak-banner-431004-n3.du.r.appspot.com',
-    git: 'https://github.com/nakunjoo/schedule-calendar',
+    configure: null,
+    git: [
+      {
+        type: '',
+        url: 'https://github.com/nakunjoo/schedule-calendar',
+      },
+    ],
+  },
+  {
+    name: 'Movie Theater',
+    images: [
+      {
+        id: 'p4_img_1',
+        src: Images.movieTheater1,
+      },
+      {
+        id: 'p4_img_2',
+        src: Images.movieTheater2,
+      },
+      {
+        id: 'p4_img_3',
+        src: Images.movieTheater3,
+      },
+      {
+        id: 'p4_img_4',
+        src: Images.movieTheater4,
+      },
+      {
+        id: 'p4_img_5',
+        src: Images.movieTheater5,
+      },
+      {
+        id: 'p4_img_6',
+        src: Images.movieTheater6,
+      },
+      {
+        id: 'p4_img_7',
+        src: Images.movieTheater7,
+      },
+      {
+        id: 'p4_img_8',
+        src: Images.movieTheater8,
+      },
+      {
+        id: 'p4_img_9',
+        src: Images.movieTheater9,
+      },
+    ],
+    content: [
+      {
+        id: 'p4_1',
+        str: '영화관 시스템 관리 프로젝트',
+      },
+      {
+        id: 'p4_2',
+        str: '상영관 좌석배치, 상영영화 등록 등의 기능을 구현',
+      },
+      {
+        id: 'p4_3',
+        str: 'nestjs와 typeorm을 사용하여 backend제작',
+      },
+      {
+        id: 'p4_4',
+        str: 'aws를 이용한 db서버 구축',
+      },
+    ],
+    tag: [
+      {
+        id: 'p4_tag_1',
+        name: 'React',
+      },
+      {
+        id: 'p4_tag_2',
+        name: 'Next',
+      },
+      {
+        id: 'p4_tag_3',
+        name: 'Redux',
+      },
+      {
+        id: 'p4_tag_4',
+        name: 'TypeScript',
+      },
+      {
+        id: 'p4_tag_5',
+        name: 'Tailwind',
+      },
+      {
+        id: 'p4_tag_6',
+        name: 'MySQL',
+      },
+      {
+        id: 'p4_tag_7',
+        name: 'NestJs',
+      },
+      {
+        id: 'p4_tag_8',
+        name: 'TypeORM',
+      },
+      {
+        id: 'p4_tag_9',
+        name: 'Swagger',
+      },
+    ],
+    site: 'https://movie-theater-dot-teak-banner-431004-n3.du.r.appspot.com',
+    configure: '테스트 id: "qwer", pw: "1234"',
+    git: [
+      {
+        type: 'Front',
+        url: 'https://github.com/nakunjoo/movie-theater_front',
+      },
+      {
+        type: 'Back',
+        url: 'https://github.com/nakunjoo/movie-theater_server',
+      },
+    ],
   },
   {
     name: 'My Portfolio',
@@ -302,7 +419,13 @@ const projectData = [
       },
     ],
     site: 'https://teak-banner-431004-n3.du.r.appspot.com',
-    git: 'https://github.com/nakunjoo/my-portfolio',
+    configure: null,
+    git: [
+      {
+        type: '',
+        url: 'https://github.com/nakunjoo/my-portfolio',
+      },
+    ],
   },
 ];
 
@@ -313,6 +436,8 @@ export const myProject2 = () => <Project data={projectData[1]} />;
 export const myProject3 = () => <Project data={projectData[2]} />;
 
 export const myProject4 = () => <Project data={projectData[3]} />;
+
+export const myProjectPortfolio = () => <Project data={projectData[4]} />;
 
 export const ElevatorFloorB3 = (array: string) => (
   <Elevator floor={'B3'} title={'Projects'} array={array} />
