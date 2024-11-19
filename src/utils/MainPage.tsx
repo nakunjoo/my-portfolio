@@ -11,5 +11,5 @@ export const myPortfolio = () => (
   </div>
 );
 export const ElevatorFloor1 = () => (
-  <Elevator floor={'1'} title={''} array={''} />
+  <Elevator floor={'1'} title={''} arrow={''} />
 );

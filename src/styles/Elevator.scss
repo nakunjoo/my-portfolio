@@ -18,17 +18,9 @@
 
     &.left {
       right: 5%;
-
-      ::after {
-        content: '\00000a ☞';
-      }
     }
     &.right {
       left: 5%;
-
-      ::after {
-        content: '\00000a ☜';
-      }
     }
   }
 

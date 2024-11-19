@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { Icon } from '@iconify/react';
 
 export default function BannerMove({
   dataValue,
@@ -32,7 +33,7 @@ export default function BannerMove({
     <div className={`main-container clearfix ${floor}`}>
       <div className={'banner-move'} ref={banner}>
         {dataValue.map((value: any) => (
-          <div className={'banner'} key={value.class}>
+          <div className={`banner`} key={value.class}>
             {value.content}
           </div>
         ))}
@@ -49,7 +50,7 @@ export default function BannerMove({
             bannerMove('left');
           }}
           role={'presentation'}>
-          <span>{'◀'}</span>
+          <Icon icon={'vaadin:level-left-bold'} />
         </div>
         <div
           className={`arrow arrow-right ${
@@ -62,7 +63,7 @@ export default function BannerMove({
             bannerMove('right');
           }}
           role={'presentation'}>
-          <span>{'▶'}</span>
+          <Icon icon={'vaadin:level-right-bold'} />
         </div>
       </div>
     </div>

@@ -104,6 +104,6 @@ export const mySkills2 = () => (
   </div>
 );
 
-export const ElevatorFloorB2 = (array: string) => (
-  <Elevator floor={'B2'} title={'Skills'} array={array} />
+export const ElevatorFloorB2 = (arrow: string) => (
+  <Elevator floor={'B2'} title={'Skills'} arrow={arrow} />
 );

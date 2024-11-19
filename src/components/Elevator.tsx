@@ -4,7 +4,7 @@ import '../styles/Elevator.scss';
 import { useNavigate } from 'react-router-dom';
 import { allowScroll, preventScroll } from '../utils/ScrollEvent';
 
-export default function Elevator({ floor, title, array }: { floor: string, title: string, array: string }) {
+export default function Elevator({ floor, title, arrow }: { floor: string, title: string, arrow: string }) {
   const navigate = useNavigate()
 
   function toggleDoor(type: string) {
@@ -42,8 +42,8 @@ export default function Elevator({ floor, title, array }: { floor: string, title
 
   return (
     <div className={'elevator-bg clearfix'}>
-      <div className={`titleWrap ${array}`}>
-        <div className={`${array}`}>
+      <div className={`titleWrap ${arrow}`}>
+        <div className={`${arrow}`}>
           {title}
         </div>
       </div>

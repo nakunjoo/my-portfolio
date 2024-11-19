@@ -439,6 +439,6 @@ export const myProject4 = () => <Project data={projectData[3]} />;
 
 export const myProjectPortfolio = () => <Project data={projectData[4]} />;
 
-export const ElevatorFloorB3 = (array: string) => (
-  <Elevator floor={'B3'} title={'Projects'} array={array} />
+export const ElevatorFloorB3 = (arrow: string) => (
+  <Elevator floor={'B3'} title={'Projects'} arrow={arrow} />
 );
