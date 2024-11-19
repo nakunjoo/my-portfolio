@@ -27,8 +27,7 @@ interface project {
   images: images[];
   content: contents[];
   tag: tags[];
-  site: string | null;
-  configure: string | null;
+  site: gits[];
   git: gits[];
 }
 
@@ -83,29 +82,29 @@ export default function Project({ data }: { data: project }) {
                 </span>
               ))}
             </p>
-            {data.site ? (
-              <a href={data.site} target={'_blank'} rel={'noreferrer'}>
-                <Icon
-                  icon={'clarity:house-solid'}
-                  style={{ color: '#636363' }}
-                />
-                {data.configure ? (
-                  <p className={'configure'}>{data.configure}</p>
-                ) : (
-                  <div />
-                )}
-              </a>
-            ) : (
-              <div />
-            )}
-            {data.git.map((value, index) => (
-              <div className={'gitBox'} key={`product-${value.url}`}>
-                <a href={value.url} target={'_blank'} rel={'noreferrer'}>
-                  <Icon icon={'bi:github'} style={{ color: '#636363' }} />
-                </a>
-                <p>{value.type}</p>
-              </div>
-            ))}
+            <div className={'urls'}>
+              {data.site.map((value, index) => (
+                <div className={'siteBox'} key={`production-site-${value.url}`}>
+                  <a href={value.url} target={'_blank'} rel={'noreferrer'}>
+                    <Icon
+                      icon={'clarity:house-solid'}
+                      style={{ color: '#636363' }}
+                    />
+                  </a>
+                  <p>{value.type}</p>
+                </div>
+              ))}
+            </div>
+            <div className={'urls'}>
+              {data.git.map((value, index) => (
+                <div className={'gitBox'} key={`product-git-${value.url}`}>
+                  <a href={value.url} target={'_blank'} rel={'noreferrer'}>
+                    <Icon icon={'bi:github'} style={{ color: '#636363' }} />
+                  </a>
+                  <p>{value.type}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

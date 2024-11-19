@@ -78,8 +78,12 @@ const projectData = [
         name: 'TypeORM',
       },
     ],
-    site: 'https://dongne.cc',
-    configure: null,
+    site: [
+      {
+        type: '',
+        url: 'https://dongne.cc',
+      },
+    ],
     git: [],
   },
   {
@@ -177,8 +181,7 @@ const projectData = [
         name: 'Swagger',
       },
     ],
-    site: null,
-    configure: null,
+    site: [],
     git: [],
   },
   {
@@ -247,8 +250,12 @@ const projectData = [
         name: 'IndexedDB',
       },
     ],
-    site: 'https://calendars-dot-teak-banner-431004-n3.du.r.appspot.com',
-    configure: null,
+    site: [
+      {
+        type: '',
+        url: 'https://calendars-dot-teak-banner-431004-n3.du.r.appspot.com',
+      },
+    ],
     git: [
       {
         type: '',
@@ -352,8 +359,17 @@ const projectData = [
         name: 'Swagger',
       },
     ],
-    site: 'https://movie-theater-dot-teak-banner-431004-n3.du.r.appspot.com',
-    configure: '테스트 id: "qwer", pw: "1234"',
+    site: [
+      {
+        type: 'production',
+        url: 'https://movie-theater-dot-teak-banner-431004-n3.du.r.appspot.com',
+      },
+      {
+        type: 'admin',
+        url:
+          'https://movie-theater-dot-teak-banner-431004-n3.du.r.appspot.com/manager',
+      },
+    ],
     git: [
       {
         type: 'Front',
@@ -418,8 +434,12 @@ const projectData = [
         name: 'Scss',
       },
     ],
-    site: 'https://teak-banner-431004-n3.du.r.appspot.com',
-    configure: null,
+    site: [
+      {
+        type: '',
+        url: 'https://teak-banner-431004-n3.du.r.appspot.com',
+      },
+    ],
     git: [
       {
         type: '',
