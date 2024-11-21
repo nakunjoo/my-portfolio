@@ -15,7 +15,13 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "typeRoots": ["./node_modules/@types", "src/utils"]
+    "typeRoots": ["./node_modules/@types", "src/utils"],
+    "baseUrl": "./src", // 절대경로 파일을 import 할 때 사용하는 속성
+    "paths": {
+      "@/*": ["/*"],
+      "@components/*": ["components/*"]
+    }
   },
-  "include": ["src"]
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts", "**/*.tsx"]
 }

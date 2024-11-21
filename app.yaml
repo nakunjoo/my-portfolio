@@ -3,10 +3,26 @@ runtime: nodejs20
 # instance_class: F1
 # service: my-portfolio
 
+# handlers:
+#   - url: /
+#     static_files: build/index.html
+#     upload: build/index.html
+#   - url: /(.*)$
+#     static_files: build/\1
+#     upload: build/(.*)
+
+# handlers:
+#   - url: /.*
+#     secure: always
+#     script: auto
 handlers:
-  - url: /
-    static_files: build/index.html
-    upload: build/index.html
-  - url: /(.*)$
-    static_files: build/\1
-    upload: build/(.*)
+  # Serve all static files with urls ending with a file extension
+  - url: /(.*\..+)$
+    static_files: dist/\1
+    upload: dist/(.*\..+)$
+    secure: always
+    # catch all handler to index.html
+  - url: /.*
+    static_files: dist/index.html
+    upload: dist/index.html
+    secure: always
