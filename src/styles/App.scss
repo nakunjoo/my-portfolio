@@ -191,14 +191,18 @@
       top: 0;
 
       &.floor_1 {
-        top: 0;
+        top: 0%;
       }
 
-      &.floor_2 {
+      &.floor_B1 {
         top: 100%;
       }
-      &.floor_3 {
+
+      &.floor_B2 {
         top: 200%;
+      }
+      &.floor_B3 {
+        top: 300%;
       }
 
       .banner-arrow {

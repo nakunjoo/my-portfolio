@@ -13,14 +13,14 @@ export default function Router() {
         </Route>
 
         {/* case2. MainPage Component가 MainLayout Componet의 children으로 삽입된다. */}
-        <Route
+        {/* <Route
           path={'/contents'}
           element={
             <DefaultLayout>
               <ContentsPage />
             </DefaultLayout>
           }
-        />
+        /> */}
       </Routes>
     </BrowserRouter>
   );

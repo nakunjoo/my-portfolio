@@ -10,6 +10,4 @@ export const myPortfolio = () => (
     </div>
   </div>
 );
-export const ElevatorFloor1 = () => (
-  <Elevator floor={'1'} title={''} arrow={''} />
-);
+export const ElevatorFloor1 = () => <Elevator floor={'1'} title={''} arrow={''} />;

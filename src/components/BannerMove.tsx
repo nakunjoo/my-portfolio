@@ -1,13 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Icon } from '@iconify/react';
 
-export default function BannerMove({
-  dataValue,
-  floor,
-}: {
-  dataValue: Array<any>;
-  floor: string;
-}) {
+export default function BannerMove({ dataValue, floor }: { dataValue: Array<any>; floor: string }) {
   const [bannerNum, setBannerNum] = useState(0);
   const banner = useRef<HTMLDivElement>(null);
 
@@ -53,9 +47,7 @@ export default function BannerMove({
           <Icon icon={'vaadin:level-left-bold'} />
         </div>
         <div
-          className={`arrow arrow-right ${
-            bannerNum >= dataValue.length - 1 ? 'disabled' : ''
-          }`}
+          className={`arrow arrow-right ${bannerNum >= dataValue.length - 1 ? 'disabled' : ''}`}
           onClick={() => {
             bannerMove('right');
           }}

@@ -9,10 +9,7 @@ export const AboutMe = () => (
         <ul>
           <li>
             <h3>
-              <Icon
-                icon={'icon-park-outline:edit-name'}
-                style={{ color: '#636363' }}
-              />
+              <Icon icon={'icon-park-outline:edit-name'} style={{ color: '#636363' }} />
               {'이름'}
             </h3>
             <p>{'나군주'}</p>
@@ -41,10 +38,7 @@ export const AboutMe = () => (
           </li>
           <li>
             <h3>
-              <Icon
-                icon={'solar:calendar-outline'}
-                style={{ color: '#636363' }}
-              />
+              <Icon icon={'solar:calendar-outline'} style={{ color: '#636363' }} />
               {'생년월일'}
             </h3>
             <p>{'1996/08/22'}</p>
@@ -55,14 +49,8 @@ export const AboutMe = () => (
               {'github'}
             </h3>
             <p>
-              <a
-                href={'https://github.com/nakunjoo'}
-                target={'_blank'}
-                rel={'noreferrer'}>
-                <Icon
-                  icon={'bi:github'}
-                  style={{ width: '40px', height: '40px', color: '#000' }}
-                />
+              <a href={'https://github.com/nakunjoo'} target={'_blank'} rel={'noreferrer'}>
+                <Icon icon={'bi:github'} style={{ width: '40px', height: '40px', color: '#000' }} />
               </a>
             </p>
           </li>

@@ -86,10 +86,7 @@ export default function Project({ data }: { data: project }) {
               {data.site.map((value, index) => (
                 <div className={'siteBox'} key={`production-site-${value.url}`}>
                   <a href={value.url} target={'_blank'} rel={'noreferrer'}>
-                    <Icon
-                      icon={'clarity:house-solid'}
-                      style={{ color: '#636363' }}
-                    />
+                    <Icon icon={'clarity:house-solid'} style={{ color: '#636363' }} />
                   </a>
                   <p>{value.type}</p>
                 </div>

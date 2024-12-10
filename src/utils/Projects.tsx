@@ -40,8 +40,7 @@ const projectData = [
       },
       {
         id: 'p1_2',
-        str:
-          'Vue + Nodejs + MySQL을 이용하여 프론트 및 백엔드 개발 및 유지보수',
+        str: 'Vue + Nodejs + MySQL을 이용하여 프론트 및 백엔드 개발 및 유지보수',
       },
       {
         id: 'p1_3',
@@ -135,8 +134,7 @@ const projectData = [
       },
       {
         id: 'p2_5',
-        str:
-          '고객명과 고객번호를 기준으로 등록되었던 고객이라면 해당 고객의 이용내역 조회',
+        str: '고객명과 고객번호를 기준으로 등록되었던 고객이라면 해당 고객의 이용내역 조회',
       },
       {
         id: 'p2_6',
@@ -220,8 +218,7 @@ const projectData = [
       },
       {
         id: 'p3_4',
-        str:
-          '공공데이터포털 Open API를 사용하여 공휴일, 기념일, 음력 데이터 조회',
+        str: '공공데이터포털 Open API를 사용하여 공휴일, 기념일, 음력 데이터 조회',
       },
     ],
     tag: [
@@ -366,8 +363,7 @@ const projectData = [
       },
       {
         type: 'admin',
-        url:
-          'https://movie-theater-dot-teak-banner-431004-n3.du.r.appspot.com/manager',
+        url: 'https://movie-theater-dot-teak-banner-431004-n3.du.r.appspot.com/manager',
       },
     ],
     git: [
