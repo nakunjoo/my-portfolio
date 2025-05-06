@@ -8,6 +8,8 @@ import {
   myProject2,
   myProject3,
   myProject4,
+  myProject5,
+  myProject6,
   myProjectPortfolio,
   ElevatorFloorB3,
 } from '../utils/Projects';
@@ -83,6 +85,14 @@ export default function MainPage() {
     {
       class: 'myProject_4',
       content: myProject4(),
+    },
+    {
+      class: 'myProject_5',
+      content: myProject5(),
+    },
+    {
+      class: 'myProject_6',
+      content: myProject6(),
     },
     {
       class: 'myProject_portfolio',

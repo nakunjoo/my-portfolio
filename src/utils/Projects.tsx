@@ -86,6 +86,172 @@ const projectData = [
     git: [],
   },
   {
+    name: '현대 자동차 UX Studio UX/HMI',
+    // video: dongne,
+    images: [
+      {
+        id: 'hd_img_1',
+        src: Images.hd0,
+      },
+      {
+        id: 'hd_img_2',
+        src: Images.hd1,
+      },
+      {
+        id: 'hd_img_3',
+        src: Images.hd2,
+      },
+      {
+        id: 'hd_img_4',
+        src: Images.hd3,
+      },
+      {
+        id: 'hd_img_5',
+        src: Images.hd4,
+      },
+    ],
+    content: [
+      {
+        id: 'hd_1',
+        str: '도로 주행 시뮬레이션 게임 제작',
+      },
+      {
+        id: 'hd_2',
+        str: '언리얼로 제작한 도로 주행 시뮬레이션 게임과 연동되는 ivi기능 구현',
+      },
+      {
+        id: 'hd_3',
+        str: '언리얼 게임에서 서버로 보낸 데이터를 TCP Socket통신으로 ivi에 전송',
+      },
+      {
+        id: 'hd_4',
+        str: 'ivi 미디어, 설정 부분의 ui/ux 개발, zustand를 사용한 상태 관리',
+      },
+      {
+        id: 'hd_5',
+        str:
+          '맵 이미지를 게임과 연동하기 위해서 16000*9000px 맵 이미지를 2D canvas를 사용하여 화면에 보이도록 설정',
+      },
+      {
+        id: 'hd_6',
+        str:
+          '게임에서 socket통신으로 받은 회전값과 이동값이 바뀔때마다 맵을 다시그리며 내비게이션의 회전 및 이동 구현',
+      },
+    ],
+    tag: [
+      {
+        id: 'hd_tag_1',
+        name: 'React',
+      },
+      {
+        id: 'hd_tag_2',
+        name: 'Electron',
+      },
+      {
+        id: 'hd_tag_3',
+        name: 'Zustand',
+      },
+      {
+        id: 'hd_tag_4',
+        name: 'Tailwindcss',
+      },
+    ],
+    site: [],
+    git: [],
+  },
+  {
+    name: 'Quelsuite',
+    // video: dongne,
+    images: [
+      {
+        id: 'ql_img_1',
+        src: Images.ql0,
+      },
+      {
+        id: 'ql_img_2',
+        src: Images.ql1,
+      },
+      {
+        id: 'ql_img_3',
+        src: Images.ql2,
+      },
+      {
+        id: 'ql_img_4',
+        src: Images.ql3,
+      },
+    ],
+    content: [
+      {
+        id: 'ql_1',
+        str:
+          'OPEN AI를 사용하여 모델, 의상을 학습시키고, 학습시킨 모델과 의상으로 입력된 프롬프트에 따라 이미지를 생성해주는 웹사이트',
+      },
+      {
+        id: 'ql_2',
+        str: 'nextjs page router를 사용한 프론트엔드 개발',
+      },
+      {
+        id: 'ql_3',
+        str:
+          'OpenAI 를 사용하여 이미지 생성에 관한 프롬프트를 생성할수있도록 챗봇과 대화하는 기능 구현',
+      },
+      {
+        id: 'ql_4',
+        str: 'replicate에서 LoRa로 학습시킨 이미지를 전송하여 이미지 생성요청',
+      },
+      {
+        id: 'ql_5',
+        str:
+          '이미지가 생성되는동안 socket통신을하여 이미지가 생성되는것을 프론트에서 실시간으로 확인',
+      },
+      {
+        id: 'ql_6',
+        str: '이미지 생성, 학습 시키는데 필요한 충전형 포인트 구현',
+      },
+    ],
+    tag: [
+      {
+        id: 'ql_tag_1',
+        name: 'React',
+      },
+      {
+        id: 'ql_tag_2',
+        name: 'NextJS',
+      },
+      {
+        id: 'ql_tag_3',
+        name: 'Redux',
+      },
+      {
+        id: 'ql_tag_4',
+        name: 'NestJS',
+      },
+      {
+        id: 'ql_tag_5',
+        name: 'Tailwindcss',
+      },
+      {
+        id: 'ql_tag_5',
+        name: 'MySQL',
+      },
+      {
+        id: 'ql_tag_5',
+        name: 'TypeORM',
+      },
+      {
+        id: 'ql_tag_5',
+        name: 'TypeScript',
+      },
+    ],
+    site: [
+      {
+        type: '',
+        url: 'https://quelsuite.com',
+      },
+    ],
+    git: [],
+  },
+  {
     name: '장비대여 관리',
     // video: dongne,
     images: [
@@ -453,7 +619,11 @@ export const myProject3 = () => <Project data={projectData[2]} />;
 
 export const myProject4 = () => <Project data={projectData[3]} />;
 
-export const myProjectPortfolio = () => <Project data={projectData[4]} />;
+export const myProject5 = () => <Project data={projectData[4]} />;
+
+export const myProject6 = () => <Project data={projectData[5]} />;
+
+export const myProjectPortfolio = () => <Project data={projectData[6]} />;
 
 export const ElevatorFloorB3 = (arrow: string) => (
   <Elevator floor={'B3'} title={'Projects'} arrow={arrow} />

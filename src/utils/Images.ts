@@ -30,6 +30,19 @@ import dongne4 from '../assets/dongne/project_dongne_4.png';
 import dongne5 from '../assets/dongne/project_dongne_5.png';
 import dongne6 from '../assets/dongne/project_dongne_6.png';
 
+// hd
+import hd0 from '../assets/hd/hd0.jpg';
+import hd1 from '../assets/hd/hd1.png';
+import hd2 from '../assets/hd/hd2.png';
+import hd3 from '../assets/hd/hd3.png';
+import hd4 from '../assets/hd/hd4.png';
+
+// ql
+import ql0 from '../assets/ql/ql0.png';
+import ql1 from '../assets/ql/ql1.png';
+import ql2 from '../assets/ql/ql2.png';
+import ql3 from '../assets/ql/ql3.png';
+
 // erp
 import erp1 from '../assets/erp/erp_1.png';
 import erp2 from '../assets/erp/erp_2.png';
@@ -87,6 +100,15 @@ const Images = {
   dongne4,
   dongne5,
   dongne6,
+  hd0,
+  hd1,
+  hd2,
+  hd3,
+  hd4,
+  ql0,
+  ql1,
+  ql2,
+  ql3,
   erp1,
   erp2,
   erp3,
