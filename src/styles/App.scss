@@ -128,13 +128,13 @@
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             flex-wrap: wrap;
+            gap: 30px;
             > div {
-              width: 150px;
-              height: 150px;
-              margin-bottom: 80px;
-              margin-left: 20px;
-              margin-right: 20px;
+              width: 130px;
+              height: 130px;
+              margin-bottom: 50px;
 
               > p {
                 font-size: 24px;

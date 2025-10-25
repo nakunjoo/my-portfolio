@@ -252,6 +252,105 @@ const projectData = [
     git: [],
   },
   {
+    name: 'stillxxx',
+    // video: dongne,
+    images: [
+      {
+        id: 'stillxxx_img_1',
+        src: Images.stillxxx1,
+      },
+      {
+        id: 'stillxxx_img_2',
+        src: Images.stillxxx2,
+      },
+      {
+        id: 'stillxxx_img_3',
+        src: Images.stillxxx3,
+      },
+      {
+        id: 'stillxxx_img_4',
+        src: Images.stillxxx4,
+      },
+      {
+        id: 'stillxxx_img_5',
+        src: Images.stillxxx5,
+      },
+    ],
+    content: [
+      {
+        id: 'stillxxx_1',
+        str: '칸예웨스트 내한 공연 티켓팅 웹 사이트',
+      },
+      {
+        id: 'stillxxx_2',
+        str:
+          'react vite 를 사용한 프론트 개발, NestJS, TypeORM을 사용한 백엔드 개발, aws ec2 ubuntu서버를 통한 배포',
+      },
+      {
+        id: 'stillxxx_3',
+        str:
+          '관리자 페이지에서 구역과 좌석을 설정해두고 예매된 자리를 조회하여 예매 가능자리를 보여줌',
+      },
+      {
+        id: 'stillxxx_4',
+        str: '일본어와 한국어 지원',
+      },
+      {
+        id: 'stillxxx_5',
+        str: 'Stripe를 사용한 결제 연동, 결제 국가가 한국일 경우 네이버, 카카오페이 지원',
+      },
+      {
+        id: 'stillxxx_6',
+        str: 'Mailchimp를 사용하여 결제가 완료된 고객에게 이메일 전송',
+      },
+      {
+        id: 'stillxxx_7',
+        str: '예매 번호를 QRcode로 생성하여 aws bucket에 저장, 콘서트장에서 QRcode로 예매 조회',
+      },
+    ],
+    tag: [
+      {
+        id: 'stillxxx_tag_1',
+        name: 'React',
+      },
+      {
+        id: 'stillxxx_tag_2',
+        name: 'Zustand',
+      },
+      {
+        id: 'stillxxx_tag_3',
+        name: 'styled-components',
+      },
+      {
+        id: 'stillxxx_tag_4',
+        name: 'AWS',
+      },
+      {
+        id: 'stillxxx_tag_5',
+        name: 'MySQL',
+      },
+      {
+        id: 'stillxxx_tag_5',
+        name: 'NestJS',
+      },
+      {
+        id: 'stillxxx_tag_5',
+        name: 'TypeORM',
+      },
+      {
+        id: 'stillxxx_tag_5',
+        name: 'TypeScript',
+      },
+    ],
+    site: [
+      {
+        type: '',
+        url: 'https://www.stillxxx.live',
+      },
+    ],
+    git: [],
+  },
+  {
     name: '장비대여 관리',
     // video: dongne,
     images: [

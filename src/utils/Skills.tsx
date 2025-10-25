@@ -47,6 +47,14 @@ export const mySkills1 = () => (
             <p>{'Next'}</p>
             <img src={Images.NextImg} alt={'next'} />
           </div>
+          <div>
+            <p>{'Zustand'}</p>
+            <img src={Images.ZustandImg} alt={'zustand'} />
+          </div>
+          <div>
+            <p>{'StyledComponents'}</p>
+            <img src={Images.StyledComponentImg} alt={'StyledComponents'} />
+          </div>
         </div>
       </div>
     </div>
@@ -96,6 +104,10 @@ export const mySkills2 = () => (
             <div>
               <p>{'Gcloud'}</p>
               <img src={Images.GcloudImg} alt={'gcloud'} />
+            </div>
+            <div>
+              <p>{'AWS'}</p>
+              <img src={Images.AwsImg} alt={'aws'} />
             </div>
           </div>
         </div>

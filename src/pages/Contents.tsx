@@ -73,6 +73,14 @@ export default function ContentsPage() {
       content: myProject4(),
     },
     {
+      class: 'myProject_5',
+      content: myProject4(),
+    },
+    {
+      class: 'myProject_6',
+      content: myProject4(),
+    },
+    {
       class: 'myProject_portfolio',
       content: myProjectPortfolio(),
     },

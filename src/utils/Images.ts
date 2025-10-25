@@ -9,6 +9,9 @@ import VueImg from '../assets/logo/VUE.png';
 import ReactImg from '../assets/logo/REACT.png';
 import ReduxImg from '../assets/logo/REDUX.png';
 import NextImg from '../assets/logo/NEXT.png';
+import ZustandImg from '../assets/logo/zustand.svg';
+import StyledComponentImg from '../assets/logo/styled-components.png';
+
 // back
 import NodeImg from '../assets/logo/NODEJS.png';
 import MysqlImg from '../assets/logo/MYSQL.png';
@@ -19,6 +22,7 @@ import NestImg from '../assets/logo/NEST.svg';
 // etc
 import GithubImg from '../assets/logo/GITHUB.png';
 import GcloudImg from '../assets/logo/GCLOUD.png';
+import AwsImg from '../assets/logo/aws.png';
 
 // project
 
@@ -75,6 +79,13 @@ import movieTheater7 from '../assets/movieTheater/movie_theater_7.png';
 import movieTheater8 from '../assets/movieTheater/movie_theater_8.png';
 import movieTheater9 from '../assets/movieTheater/movie_theater_9.png';
 
+// stillxxx
+import stillxxx1 from '../assets/stillxxx/stillxxx_1.png';
+import stillxxx2 from '../assets/stillxxx/stillxxx_2.png';
+import stillxxx3 from '../assets/stillxxx/stillxxx_3.png';
+import stillxxx4 from '../assets/stillxxx/stillxxx_4.png';
+import stillxxx5 from '../assets/stillxxx/stillxxx_5.png';
+
 const Images = {
   HtmlImg,
   CssImg,
@@ -86,6 +97,8 @@ const Images = {
   ReactImg,
   ReduxImg,
   NextImg,
+  ZustandImg,
+  StyledComponentImg,
   NodeImg,
   MysqlImg,
   Sequelize,
@@ -94,6 +107,7 @@ const Images = {
   NestImg,
   GithubImg,
   GcloudImg,
+  AwsImg,
   dongne1,
   dongne2,
   dongne3,
@@ -133,6 +147,11 @@ const Images = {
   movieTheater7,
   movieTheater8,
   movieTheater9,
+  stillxxx1,
+  stillxxx2,
+  stillxxx3,
+  stillxxx4,
+  stillxxx5,
 };
 
 export default Images;
