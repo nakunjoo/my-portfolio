@@ -16,6 +16,7 @@ import {
 
 import { preventScroll } from '../utils/ScrollEvent';
 
+
 export default function MainPage() {
   useEffect(() => {
     if (window) {
